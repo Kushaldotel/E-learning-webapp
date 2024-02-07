@@ -1,0 +1,30 @@
+{% extends "course/base.html" %}
+
+{% block content_Wrapper %}
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0">My Profile</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">User Details</h5>
+                            <p class="card-text"><strong>Username:</strong> {{ user.username }}</p>
+                            <p class="card-text"><strong>Email:</strong> {{ user.email }}</p>
+                            <!-- Add more user details as needed -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock content_Wrapper %}

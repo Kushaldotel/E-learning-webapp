@@ -1,0 +1,29 @@
+{% extends "course/base_student.html" %}
+
+{% block content_Wrapper %}
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0">{{ course.name }}</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card card-primary card-outline">
+                        <div class="card-body">
+                            <p class="card-text">{{ course.description }}</p>
+                            <p class="card-text"><strong>Teacher:</strong> {{ course.created_by.username }}</p>
+                            <!-- Add more details about the course as needed -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock content_Wrapper %}
